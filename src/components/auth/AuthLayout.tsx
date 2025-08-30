@@ -1,5 +1,6 @@
 import React from "react";
 import { Zap, Shield, BarChart3 } from "lucide-react";
+import Logo from "../extra/SiteLogo";
 
 interface AuthLayoutProps {
   children: React.ReactNode;
@@ -18,10 +19,11 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
       <div className='hidden lg:flex lg:w-1/2 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900 p-12 flex-col justify-between'>
         <div>
           <div className='flex items-center space-x-3 mb-8'>
-            <div className='w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center'>
+            {/* <div className='w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center'>
               <Zap className='w-6 h-6 text-white' />
             </div>
-            <h1 className='text-2xl font-bold text-white'>TechTitans</h1>
+            <h1 className='text-2xl font-bold text-white'>TechTitans</h1> */}
+            <Logo />
           </div>
 
           <div className='space-y-8'>

@@ -9,11 +9,7 @@ export default function Logo() {
     <Link to='/'>
       <div className='flex items-center space-x-2'>
         {logo ? (
-          <img
-            src={logo}
-            alt='Site Logo'
-            className='h-16 w-72 object-contain'
-          />
+          <img src={logo} alt='Site Logo' className='h-16 object-contain' />
         ) : (
           <span className='text-xl font-bold text-white'>
             <Shield className='inline-block h-6 w-6 mr-1 text-blue-500' />
